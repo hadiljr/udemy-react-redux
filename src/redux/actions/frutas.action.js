@@ -1,4 +1,4 @@
-import { actionTypes } from "../constants/frutas_constants"
+import { actionTypes } from "../../constants/frutas_constants"
 
 const actions = {
     adicionar: fruta =>({

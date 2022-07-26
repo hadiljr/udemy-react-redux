@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch} from 'react-redux';
-import { actions } from "../actions/frutas.action";
+import {frutaAdded} from "../redux/slices/frutasSlice";
 
 const AdicionaFruta = () =>{
 
@@ -18,7 +18,7 @@ const AdicionaFruta = () =>{
             quantidade
         }
 
-        dispatch(actions.adicionar(fruta));
+        dispatch(frutaAdded(fruta));
     }
 
     return(
